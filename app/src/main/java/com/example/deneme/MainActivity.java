@@ -17,7 +17,6 @@ import com.example.deneme.Fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-
     final Fragment fragment1 = new HomeFragment();
     final Fragment fragment2 = new DashboardFragment();
     final Fragment fragment3 = new NotificationFragment();
@@ -31,10 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
 
         fm.beginTransaction().add(R.id.main_container, fragment5, "5").hide(fragment5).commit();
         fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
@@ -42,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();
         fm.beginTransaction().add(R.id.main_container,fragment1, "1").commit();
 
-
-
     }
-
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -74,14 +68,8 @@ public class MainActivity extends AppCompatActivity {
                     active = fragment4;
                     return true;
 
-
             }
             return false;
         }
     };
-
-
-
-
-
 }
