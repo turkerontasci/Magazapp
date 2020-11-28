@@ -10,11 +10,10 @@
 
     <ImageView
         android:id="@+id/selectedImage"
-        android:layout_width="421dp"
-        android:layout_height="739dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        tools:layout_editor_absoluteX="-3dp" />
+        android:layout_alignParentTop="true"/>
 
 </RelativeLayout>
