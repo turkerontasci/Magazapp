@@ -2,9 +2,13 @@ package com.example.deneme.Fragments;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +16,8 @@ import android.widget.ImageView;
 
 import com.example.deneme.R;
 import com.example.deneme.SecondActivity;
+
+import java.io.ByteArrayOutputStream;
 
 
 /**
@@ -25,6 +31,7 @@ public class HomeFragment extends Fragment{
         // Required empty public constructor
     }
 
+    byte[] bytesImage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +39,7 @@ public class HomeFragment extends Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ImageView imageView1 = (ImageView) view.findViewById(R.id.imageView1);
+        final ImageView imageView1 = (ImageView) view.findViewById(R.id.imageView1);
         imageView1.setImageResource(R.drawable.tren);
         ImageView imageView2 = (ImageView) view.findViewById(R.id.imageView2);
         imageView2.setImageResource(R.drawable.cicek);
@@ -44,7 +51,9 @@ public class HomeFragment extends Fragment{
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                i.putExtra("resourceInt", R.drawable.tren);
                 startActivity(i);
             }
         });
@@ -53,6 +62,7 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                i.putExtra("resourceInt", R.drawable.cicek);
                 startActivity(i);
             }
         });
@@ -61,6 +71,7 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                i.putExtra("resourceInt", R.drawable.sunset);
                 startActivity(i);
             }
         });
@@ -69,6 +80,7 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                i.putExtra("resourceInt", R.drawable.gece);
                 startActivity(i);
             }
         });
