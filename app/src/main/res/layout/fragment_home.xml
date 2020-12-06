@@ -18,8 +18,8 @@
         android:layout_columnSpan="2"
         android:layout_columnWeight="1"
         android:scaleType="centerCrop"
-        android:padding="1dp"
-        app:riv_corner_radius="12dp"
+        android:padding="5dp"
+        app:riv_corner_radius="15dp"
         app:riv_oval="false" />
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -30,8 +30,8 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="centerCrop"
-        android:padding="1dp"
-        app:riv_corner_radius="12dp"
+        android:padding="5dp"
+        app:riv_corner_radius="15dp"
         app:riv_oval="false"/>
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -41,9 +41,9 @@
         android:layout_rowSpan="2"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:padding="1dp"
+        android:padding="5dp"
         android:scaleType="centerCrop"
-        app:riv_corner_radius="12dp"
+        app:riv_corner_radius="15dp"
         app:riv_oval="false"/>
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -53,8 +53,8 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="centerCrop"
-        android:padding="1dp"
-        app:riv_corner_radius="12dp"
+        android:padding="5dp"
+        app:riv_corner_radius="15dp"
         app:riv_oval="false"/>
 
 
