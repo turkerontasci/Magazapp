@@ -13,22 +13,45 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="65dp"
+        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/button_background"
-        android:theme="@style/AppTheme.AppBarOverlay"
         android:outlineAmbientShadowColor="#FFFFFF"
         android:outlineSpotShadowColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:background="#9E58AB"
-            android:src="@drawable/ust_third" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/appName"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="140dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ust_third" />
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/favorite_full_icon" />
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/message_icon" />
+
+
+        </android.support.v7.widget.Toolbar>
 
 
     </android.support.design.widget.AppBarLayout>
@@ -62,19 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigation" />
 
-    <ImageView
-        android:id="@+id/favorite"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_background"
-        android:scaleType="centerInside"
-        android:src="@drawable/favorite_icon"
-        app:layout_constraintBottom_toTopOf="@+id/include11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </android.support.constraint.ConstraintLayout>

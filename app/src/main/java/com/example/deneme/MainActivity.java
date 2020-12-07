@@ -1,5 +1,6 @@
 package com.example.deneme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.v4.app.Fragment;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     final FragmentManager fm = getSupportFragmentManager();
     Fragment active = fragment1;
 
-    ImageView favButton;
+    ImageView favButton, appNameButton, messageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +38,35 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        appNameButton = findViewById(R.id.appName);
         favButton = findViewById(R.id.favorite);
+        messageButton = findViewById(R.id.messages);
+
+        messageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MessageActivity.class);
+                startActivity(intent);
+            }
+        });
 
         favButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fm.beginTransaction().hide(active).show(fragment3).commit();
-                active = fragment3;
+                Intent intent = new Intent(getApplicationContext(), FavoritesActivity.class);
+                startActivity(intent);
             }
         });
+
+        appNameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fm.beginTransaction().hide(active).show(fragment1).commit();
+                active = fragment1;
+            }
+        });
+
+
 
         fm.beginTransaction().add(R.id.main_container, fragment5, "5").hide(fragment5).commit();
         fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();

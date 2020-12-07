@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/mgzppyeni"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".FavoritesActivity"></activity>
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".SecondActivity" />
         <activity
             android:name=".MainActivity"
             android:label="Magazapp">
