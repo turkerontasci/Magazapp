@@ -41,19 +41,32 @@ public class HomeFragment extends Fragment{
 
         final ImageView imageView1 = (ImageView) view.findViewById(R.id.imageView1);
         imageView1.setImageResource(R.drawable.tren);
-        ImageView imageView2 = (ImageView) view.findViewById(R.id.imageView2);
+        imageView1.setTag("İstasyon");
+        final ImageView imageView2 = (ImageView) view.findViewById(R.id.imageView2);
         imageView2.setImageResource(R.drawable.cicek);
-        ImageView imageView3 = (ImageView) view.findViewById(R.id.imageView3);
+        imageView2.setTag("Çiçek");
+        final ImageView imageView3 = (ImageView) view.findViewById(R.id.imageView3);
         imageView3.setImageResource(R.drawable.sunset);
-        ImageView imageView4 = (ImageView) view.findViewById(R.id.imageView4);
+        imageView3.setTag("Sunset");
+        final ImageView imageView4 = (ImageView) view.findViewById(R.id.imageView4);
         imageView4.setImageResource(R.drawable.gece);
+        imageView4.setTag("Gece");
+
+        imageView1.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                return false;
+            }
+        });
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                String imageName = (String) imageView1.getTag();
                 i.putExtra("resourceInt", R.drawable.tren);
+                i.putExtra("resourceName", imageName);
                 startActivity(i);
             }
         });
@@ -62,7 +75,9 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                String imageName = (String) imageView2.getTag();
                 i.putExtra("resourceInt", R.drawable.cicek);
+                i.putExtra("resourceName", imageName);
                 startActivity(i);
             }
         });
@@ -71,7 +86,9 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                String imageName = (String) imageView3.getTag();
                 i.putExtra("resourceInt", R.drawable.sunset);
+                i.putExtra("resourceName", imageName);
                 startActivity(i);
             }
         });
@@ -80,7 +97,9 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), SecondActivity.class);
+                String imageName = (String) imageView4.getTag();
                 i.putExtra("resourceInt", R.drawable.gece);
+                i.putExtra("resourceName", imageName);
                 startActivity(i);
             }
         });
