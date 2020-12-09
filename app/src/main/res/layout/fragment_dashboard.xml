@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/inside3"
     tools:context=".Fragments.DashboardFragment">
 
     <ListView
         android:id="@+id/listView"
-        android:background="@drawable/inside3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAlignment="center"

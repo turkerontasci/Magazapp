@@ -27,8 +27,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp">
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/cvImage1"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="3dp"
+                    app:riv_corner_radius="15dp"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"/>
@@ -78,8 +81,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp">
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/cvImage2"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="3dp"
+                    app:riv_corner_radius="15dp"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"/>
@@ -129,8 +135,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp">
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/cvImage3"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="3dp"
+                    app:riv_corner_radius="15dp"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"/>
@@ -180,8 +189,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp">
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/cvImage4"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="3dp"
+                    app:riv_corner_radius="15dp"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"/>
@@ -231,8 +243,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp">
 
-                <ImageView
+                <com.makeramen.roundedimageview.RoundedImageView
                     android:id="@+id/cvImage5"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="3dp"
+                    app:riv_corner_radius="15dp"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:scaleType="centerCrop"/>

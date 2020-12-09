@@ -28,28 +28,39 @@
             android:layout_width="match_parent"
             android:layout_height="45dp">
 
-            <ImageView
-                android:id="@+id/appName"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_marginRight="140dp"
-                android:scaleType="centerInside"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ust_third" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/favorite"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/favorite_full_icon" />
+                <ImageView
+                    android:id="@+id/appName"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ust_third" />
 
-            <ImageView
-                android:id="@+id/messages"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/message_icon" />
+                <ImageView
+                    android:id="@+id/favorite"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/favorite_full_icon" />
+
+                <ImageView
+                    android:id="@+id/messages"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginBottom="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/message_icon" />
+
+            </RelativeLayout>
 
 
         </android.support.v7.widget.Toolbar>
