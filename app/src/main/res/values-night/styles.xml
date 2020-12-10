@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#673AB7</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextAppearance.TabsFont" parent="android:TextAppearance">
+        <item name="fontFamily">font/Helvetica</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+</resources>
