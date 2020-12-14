@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,13 +11,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/button_background"
-        android:foregroundGravity="center"
-        android:outlineAmbientShadowColor="#FFFFFF"
-        android:outlineSpotShadowColor="#FFFFFF"
+        android:background="@color/mainColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,7 +19,8 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
-            android:layout_height="45dp">
+            android:layout_height="45dp"
+            android:background="@color/mainColor">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -82,11 +76,8 @@
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_background"
+        android:layout_height="55dp"
+        android:background="@color/mainColor"
         android:foreground="@drawable/alt"
         app:itemIconSize="25dp"
         app:itemIconTint="#ffffff"

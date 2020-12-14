@@ -1,64 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="2"
-    android:rowCount="3"
-    android:padding="5dp"
+    android:orientation="vertical"
     tools:context=".Fragments.HomeFragment">
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_rowWeight="1"
-        android:layout_columnSpan="2"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="5dp"
-        app:riv_corner_radius="15dp"
-        app:riv_oval="false" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/cvTop"
+            app:cardCornerRadius="15dp"
+            android:outlineAmbientShadowColor="#000000"
+            android:padding="15dp"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tren"
+                android:scaleType="centerCrop"/>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="15dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:padding="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/cvPhoto"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:id="@+id/cvText1"
+                                android:layout_width="150dp"
+                                android:layout_height="75dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:background="@drawable/text_background_gradient"
+                                android:textColor="#000000" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:padding="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/cvPhoto2"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/cvText2"
+                                android:layout_width="150dp"
+                                android:layout_height="75dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:background="@drawable/text_background_gradient"
+                                android:textColor="#000000" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:padding="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/cvPhoto3"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/cvText3"
+                                android:layout_width="150dp"
+                                android:layout_height="75dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:background="@drawable/text_background_gradient"
+                                android:textColor="#000000" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:padding="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/cvPhoto4"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/cvText4"
+                                android:layout_width="150dp"
+                                android:layout_height="75dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:background="@drawable/text_background_gradient"
+                                android:textColor="#000000" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cvPhoto5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/cvText5"
+                            android:layout_width="150dp"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cvPhoto6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/cvText6"
+                            android:layout_width="150dp"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cvPhoto7"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/cvText7"
+                            android:layout_width="150dp"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cvPhoto8"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/cvText8"
+                            android:layout_width="150dp"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_rowSpan="1"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="5dp"
-        app:riv_corner_radius="15dp"
-        app:riv_oval="false"/>
-
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_rowSpan="2"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:padding="5dp"
-        android:scaleType="centerCrop"
-        app:riv_corner_radius="15dp"
-        app:riv_oval="false"/>
-
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="5dp"
-        app:riv_corner_radius="15dp"
-        app:riv_oval="false"/>
-
-
-
-
-</GridLayout>
+</ScrollView>

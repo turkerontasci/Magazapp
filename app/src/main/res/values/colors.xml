@@ -9,4 +9,5 @@
     <color name="mainColor">#D8C51162</color>
     <color name="secondaryColor">#BDBDBD</color>
     <color name="mainBackground">#FFFFFF</color>
+    <color name="cardShadow">#525252</color>
 </resources>
