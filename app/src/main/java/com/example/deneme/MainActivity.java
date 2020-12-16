@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.deneme.Fragments.DashboardFragment;
 import com.example.deneme.Fragments.HomeFragment;
@@ -28,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     final FragmentManager fm = getSupportFragmentManager();
     Fragment active = fragment1;
 
-    ImageView favButton, appNameButton, messageButton;
+    ImageView favButton, messageButton;
+
+    TextView appNameButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,22 +2,15 @@ package com.example.deneme.Fragments;
 
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.example.deneme.R;
 import com.example.deneme.SecondActivity;
-
-import java.io.ByteArrayOutputStream;
 
 
 /**
@@ -30,8 +23,6 @@ public class HomeFragment extends Fragment{
     public HomeFragment() {
         // Required empty public constructor
     }
-
-    byte[] bytesImage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -119,16 +110,11 @@ public class HomeFragment extends Fragment{
         return view;
     }
 
-
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
 
-
     }
-
-
 }

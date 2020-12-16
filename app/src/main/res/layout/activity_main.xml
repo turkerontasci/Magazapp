@@ -26,14 +26,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
+                <TextView
                     android:id="@+id/appName"
+                    android:text="MAGAZAPP"
+                    android:textColor="@color/mainText"
+                    android:fontFamily="@font/russoone_regular"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:layout_width="150dp"
                     android:layout_height="45dp"
                     android:layout_alignParentLeft="true"
-                    android:scaleType="centerInside"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ust_third" />
+                    android:layout_gravity="center_vertical" />
 
                 <ImageView
                     android:id="@+id/favorite"

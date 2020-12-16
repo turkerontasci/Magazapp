@@ -9,17 +9,20 @@
         android:roundIcon="@drawable/mgzppyeni"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".FavoritesActivity"></activity>
-        <activity android:name=".MessageActivity" />
-        <activity android:name=".SecondActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="Magazapp">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Magazapp">
+
         </activity>
     </application>
 
