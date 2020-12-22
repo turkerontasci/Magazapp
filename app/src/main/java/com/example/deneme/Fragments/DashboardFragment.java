@@ -1,8 +1,10 @@
 package com.example.deneme.Fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,7 @@ import java.util.List;
 public class DashboardFragment extends Fragment {
 
     private ListView listView;
+    private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
 
     public DashboardFragment() {
         // Required empty public constructor
@@ -28,25 +31,53 @@ public class DashboardFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
-        /*
-        ArrayList<String> kategoriAdi = new ArrayList<>();
+        cardView1 = view.findViewById(R.id.categoryCard1);
+        cardView2 = view.findViewById(R.id.categoryCard2);
+        cardView3 = view.findViewById(R.id.categoryCard3);
+        cardView4 = view.findViewById(R.id.categoryCard4);
+        cardView5 = view.findViewById(R.id.categoryCard5);
 
-        kategoriAdi.add("Kadın Giyim");
-        kategoriAdi.add("Erkek Giyim");
-        kategoriAdi.add("Aksesuar");
-        kategoriAdi.add("Makyaj");
-        kategoriAdi.add("Elektronik");
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, kategoriAdi);
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        ListView listView = (ListView) view.findViewById(R.id.listView);
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        listView.setAdapter(adapter);
-         */
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        cardView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
