@@ -31,6 +31,7 @@ public class DashboardFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
+        /*
         ArrayList<String> kategoriAdi = new ArrayList<>();
 
         kategoriAdi.add("Kadın Giyim");
@@ -43,12 +44,10 @@ public class DashboardFragment extends Fragment {
         ListView listView = (ListView) view.findViewById(R.id.listView);
 
         listView.setAdapter(adapter);
+         */
 
 
 
         return view;
     }
-
-
-
 }

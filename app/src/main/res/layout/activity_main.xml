@@ -19,8 +19,7 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/mainColor">
+            android:layout_height="45dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -61,9 +60,7 @@
 
             </RelativeLayout>
 
-
         </android.support.v7.widget.Toolbar>
-
 
     </android.support.design.widget.AppBarLayout>
 
@@ -83,7 +80,6 @@
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:background="@color/mainColor"
-        android:foreground="@drawable/alt"
         app:itemIconSize="25dp"
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
@@ -92,8 +88,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navigation" />
-
-
-
 
 </android.support.constraint.ConstraintLayout>
