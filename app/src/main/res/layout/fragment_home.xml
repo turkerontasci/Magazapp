@@ -21,11 +21,24 @@
             android:padding="15dp"
             android:layout_margin="15dp">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/tren"
-                android:scaleType="centerCrop"/>
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tren"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/text_background_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"/>
+
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 

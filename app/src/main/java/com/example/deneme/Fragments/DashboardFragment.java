@@ -12,6 +12,11 @@ import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.AdapterView;
 
+import com.example.deneme.Categories.MenswearActivity;
+import com.example.deneme.Categories.OutdoorActivity;
+import com.example.deneme.Categories.PersonalcareActivity;
+import com.example.deneme.Categories.TechActivity;
+import com.example.deneme.Categories.WomenswearActivity;
 import com.example.deneme.R;
 
 import java.util.ArrayList;
@@ -42,7 +47,7 @@ public class DashboardFragment extends Fragment {
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                Intent intent = new Intent(getActivity(), WomenswearActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +55,7 @@ public class DashboardFragment extends Fragment {
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                Intent intent = new Intent(getActivity(), MenswearActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +63,7 @@ public class DashboardFragment extends Fragment {
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                Intent intent = new Intent(getActivity(), PersonalcareActivity.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +71,7 @@ public class DashboardFragment extends Fragment {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                Intent intent = new Intent(getActivity(), TechActivity.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +79,7 @@ public class DashboardFragment extends Fragment {
         cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), KategoriActivity.class);
+                Intent intent = new Intent(getActivity(), OutdoorActivity.class);
                 startActivity(intent);
             }
         });

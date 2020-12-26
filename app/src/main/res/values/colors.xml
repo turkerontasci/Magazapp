@@ -10,4 +10,10 @@
     <color name="secondaryColor">#BDBDBD</color>
     <color name="mainBackground">#FFFFFF</color>
     <color name="cardShadow">#525252</color>
+
+    <color name="womensWearColor">#D8C51162</color>
+    <color name="techColor">#3F8ED3</color>
+    <color name="mensWearColor">#FF9800</color>
+    <color name="outdoorColor">#388E3C</color>
+    <color name="personalCareColor">#8BC34A</color>
 </resources>

@@ -2,6 +2,7 @@ package com.example.deneme;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,10 +11,21 @@ public class FavoritesActivity extends AppCompatActivity {
     ImageView iV1, iV2, iV3, iV4, iV5;
     TextView tv1, tv2, tv3, tv4, tv5;
 
+    ImageView backArrow;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorites);
+
+        backArrow = findViewById(R.id.back);
+
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         iV1 = findViewById(R.id.cvImage1);
         iV1.setImageResource(R.drawable.tren);

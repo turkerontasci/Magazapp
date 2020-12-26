@@ -9,7 +9,12 @@
         android:roundIcon="@drawable/mgzppyeni"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Fragments.KategoriActivity"></activity>
+        <activity android:name=".Categories.PersonalcareActivity"></activity>
+        <activity android:name=".Categories.WomenswearActivity" />
+        <activity android:name=".Categories.MenswearActivity" />
+        <activity android:name=".Categories.OutdoorActivity" />
+        <activity android:name=".Categories.TechActivity" />
+        <activity android:name=".Fragments.KategoriActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +27,7 @@
         <activity android:name=".SecondActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="Magazapp"></activity>
+            android:label="Magazapp" />
     </application>
 
 </manifest>
