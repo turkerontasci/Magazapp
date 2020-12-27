@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.example.deneme.R;
-import com.example.deneme.SecondActivity;
+import com.example.deneme.Extras.SecondActivity;
 
 
 /**

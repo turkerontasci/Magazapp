@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FavoritesActivity" />
-        <activity android:name=".MessageActivity" />
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".Extras.FavoritesActivity" />
+        <activity android:name=".Extras.MessageActivity" />
+        <activity android:name=".Extras.SecondActivity" />
         <activity
             android:name=".MainActivity"
             android:label="Magazapp" />

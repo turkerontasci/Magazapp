@@ -1,4 +1,4 @@
-package com.example.deneme;
+package com.example.deneme.Extras;
 
 import android.animation.Animator;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.deneme.R;
 
 
 public class SecondActivity extends AppCompatActivity{

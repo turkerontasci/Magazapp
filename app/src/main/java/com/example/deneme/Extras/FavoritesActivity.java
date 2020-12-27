@@ -1,10 +1,12 @@
-package com.example.deneme;
+package com.example.deneme.Extras;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.deneme.R;
 
 public class FavoritesActivity extends AppCompatActivity {
 

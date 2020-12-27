@@ -2,7 +2,6 @@ package com.example.deneme;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.internal.BottomNavigationItemView;
 import android.support.v4.app.Fragment;
 import android.support.design.widget.BottomNavigationView;
 
@@ -13,6 +12,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.deneme.Extras.FavoritesActivity;
+import com.example.deneme.Extras.MessageActivity;
 import com.example.deneme.Fragments.DashboardFragment;
 import com.example.deneme.Fragments.HomeFragment;
 import com.example.deneme.Fragments.ImageFragment;
