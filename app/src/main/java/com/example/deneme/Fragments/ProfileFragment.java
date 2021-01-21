@@ -18,10 +18,28 @@ public class ProfileFragment extends Fragment {
 
     Integer statusImage[] = {
             R.drawable.dev_icon,
-            R.drawable.standart_member,
+            R.drawable.status_star,
             R.drawable.favorite_silver,
             R.drawable.favorite_gold
     };
+
+    private void userStatus(int selectedStatus) {
+
+        if (selectedStatus == 0) {
+            statusIcon.setImageResource(statusImage[0]);
+            userStatus.setText(status[0]);
+        } else if (selectedStatus == 1) {
+            statusIcon.setImageResource(statusImage[1]);
+            userStatus.setText(status[1]);
+        } else if (selectedStatus == 2) {
+            statusIcon.setImageResource(statusImage[2]);
+            userStatus.setText(status[2]);
+        } else if (selectedStatus == 3) {
+            statusIcon.setImageResource(statusImage[3]);
+            userStatus.setText(status[3]);
+        }
+
+    }
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -44,20 +62,11 @@ public class ProfileFragment extends Fragment {
         userStatus = view.findViewById(R.id.userStatus);
         statusIcon = view.findViewById(R.id.statusIcon);
 
-        if (selectedStatus == 0) {
-            statusIcon.setImageResource(statusImage[0]);
-            userStatus.setText(status[0]);
-        } else if (selectedStatus == 1) {
-            statusIcon.setImageResource(statusImage[1]);
-            userStatus.setText(status[1]);
-        } else if (selectedStatus == 2) {
-            statusIcon.setImageResource(statusImage[2]);
-            userStatus.setText(status[2]);
-        } else if (selectedStatus == 3) {
-            statusIcon.setImageResource(statusImage[3]);
-            userStatus.setText(status[3]);
-        }
+        userStatus(0);
+
+
 
         return view;
     }
 }
+

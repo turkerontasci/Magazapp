@@ -18,7 +18,8 @@ import com.example.deneme.Extras.SecondActivity;
  */
 public class HomeFragment extends Fragment{
 
-
+    ImageView imageView1, imageView2, imageView3, imageView4,
+    imageView5, imageView6, imageView7, imageView8;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -30,28 +31,35 @@ public class HomeFragment extends Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        final ImageView imageView1 = (ImageView) view.findViewById(R.id.cvPhoto);
+        imageView1 = view.findViewById(R.id.cvPhoto);
         imageView1.setImageResource(R.drawable.tren);
         imageView1.setTag("İstasyon");
-        final ImageView imageView2 = (ImageView) view.findViewById(R.id.cvPhoto2);
+
+        imageView2 = view.findViewById(R.id.cvPhoto2);
         imageView2.setImageResource(R.drawable.cicek);
         imageView2.setTag("Çiçek");
-        final ImageView imageView3 = (ImageView) view.findViewById(R.id.cvPhoto3);
+
+        imageView3 = view.findViewById(R.id.cvPhoto3);
         imageView3.setImageResource(R.drawable.sunset);
         imageView3.setTag("Sunset");
-        final ImageView imageView4 = (ImageView) view.findViewById(R.id.cvPhoto4);
+
+        imageView4 = view.findViewById(R.id.cvPhoto4);
         imageView4.setImageResource(R.drawable.gece);
         imageView4.setTag("Gece");
-        final ImageView imageView5 = (ImageView) view.findViewById(R.id.cvPhoto5);
+
+        imageView5 = view.findViewById(R.id.cvPhoto5);
         imageView5.setImageResource(R.drawable.tren);
         imageView5.setTag("İstasyon");
-        final ImageView imageView6 = (ImageView) view.findViewById(R.id.cvPhoto6);
+
+        imageView6 = view.findViewById(R.id.cvPhoto6);
         imageView6.setImageResource(R.drawable.cicek);
         imageView6.setTag("Çiçek");
-        final ImageView imageView7 = (ImageView) view.findViewById(R.id.cvPhoto7);
+
+        imageView7 = view.findViewById(R.id.cvPhoto7);
         imageView7.setImageResource(R.drawable.sunset);
         imageView7.setTag("Sunset");
-        final ImageView imageView8 = (ImageView) view.findViewById(R.id.cvPhoto8);
+
+        imageView8 = view.findViewById(R.id.cvPhoto8);
         imageView8.setImageResource(R.drawable.gece);
         imageView8.setTag("Gece");
 
