@@ -1,9 +1,11 @@
-package com.example.Magazapp;
+package com.turkerontasci.Magazapp;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.turkerontasci.Magazapp.R;
 
 public class Splash extends AppCompatActivity {
 

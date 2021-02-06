@@ -1,4 +1,4 @@
-package com.example.Magazapp.Fragments;
+package com.turkerontasci.Magazapp.Fragments;
 
 
 import android.content.Intent;
@@ -10,12 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.Magazapp.Categories.MenswearActivity;
-import com.example.Magazapp.Categories.OutdoorActivity;
-import com.example.Magazapp.Categories.PersonalcareActivity;
-import com.example.Magazapp.Categories.TechActivity;
-import com.example.Magazapp.Categories.WomenswearActivity;
-import com.example.Magazapp.R;
+import com.turkerontasci.Magazapp.Categories.MenswearActivity;
+import com.turkerontasci.Magazapp.Categories.OutdoorActivity;
+import com.turkerontasci.Magazapp.Categories.PersonalcareActivity;
+import com.turkerontasci.Magazapp.Categories.TechActivity;
+import com.turkerontasci.Magazapp.Categories.WomenswearActivity;
+import com.turkerontasci.Magazapp.R;
 
 public class DashboardFragment extends Fragment {
 

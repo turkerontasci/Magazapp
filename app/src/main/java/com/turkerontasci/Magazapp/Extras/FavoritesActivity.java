@@ -1,4 +1,4 @@
-package com.example.Magazapp.Extras;
+package com.turkerontasci.Magazapp.Extras;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.Magazapp.R;
+import com.turkerontasci.Magazapp.R;
 
 public class FavoritesActivity extends AppCompatActivity {
 

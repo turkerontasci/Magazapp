@@ -1,4 +1,4 @@
-package com.example.Magazapp.Fragments;
+package com.turkerontasci.Magazapp.Fragments;
 
 
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.Magazapp.R;
+import com.turkerontasci.Magazapp.R;
 
 import java.util.ArrayList;
 

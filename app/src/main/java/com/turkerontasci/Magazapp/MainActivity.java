@@ -1,4 +1,4 @@
-package com.example.Magazapp;
+package com.turkerontasci.Magazapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,13 +12,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.Magazapp.Extras.FavoritesActivity;
-import com.example.Magazapp.Extras.MessageActivity;
-import com.example.Magazapp.Fragments.DashboardFragment;
-import com.example.Magazapp.Fragments.HomeFragment;
-import com.example.Magazapp.Fragments.ImageFragment;
-import com.example.Magazapp.Fragments.NotificationFragment;
-import com.example.Magazapp.Fragments.ProfileFragment;
+import com.turkerontasci.Magazapp.Extras.FavoritesActivity;
+import com.turkerontasci.Magazapp.Extras.MessageActivity;
+import com.turkerontasci.Magazapp.Fragments.DashboardFragment;
+import com.turkerontasci.Magazapp.Fragments.HomeFragment;
+import com.turkerontasci.Magazapp.Fragments.ImageFragment;
+import com.turkerontasci.Magazapp.Fragments.NotificationFragment;
+import com.turkerontasci.Magazapp.Fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 

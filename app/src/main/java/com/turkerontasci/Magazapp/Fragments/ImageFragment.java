@@ -1,4 +1,4 @@
-package com.example.Magazapp.Fragments;
+package com.turkerontasci.Magazapp.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.Magazapp.R;
+import com.turkerontasci.Magazapp.R;
 
 public class ImageFragment extends Fragment {
 
