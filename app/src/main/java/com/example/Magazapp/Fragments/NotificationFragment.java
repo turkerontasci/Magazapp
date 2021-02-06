@@ -1,4 +1,4 @@
-package com.example.deneme.Fragments;
+package com.example.Magazapp.Fragments;
 
 
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.deneme.R;
+import com.example.Magazapp.R;
 
 import java.util.ArrayList;
 

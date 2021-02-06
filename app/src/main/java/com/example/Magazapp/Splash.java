@@ -1,4 +1,4 @@
-package com.example.deneme;
+package com.example.Magazapp;
 
 import android.content.Intent;
 import android.os.Handler;

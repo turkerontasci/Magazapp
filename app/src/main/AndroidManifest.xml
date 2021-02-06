@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.deneme">
+    package="com.example.Magazapp">
 
     <application
         android:allowBackup="true"
@@ -9,24 +9,24 @@
         android:roundIcon="@mipmap/ic_logo_selected_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Categories.PersonalcareActivity"></activity>
-        <activity android:name=".Categories.WomenswearActivity" />
-        <activity android:name=".Categories.MenswearActivity" />
-        <activity android:name=".Categories.OutdoorActivity" />
-        <activity android:name=".Categories.TechActivity" />
-        <activity android:name=".Fragments.KategoriActivity" />
-        <activity android:name=".Splash">
+        <activity android:name="com.example.Magazapp.Categories.PersonalcareActivity"></activity>
+        <activity android:name="com.example.Magazapp.Categories.WomenswearActivity" />
+        <activity android:name="com.example.Magazapp.Categories.MenswearActivity" />
+        <activity android:name="com.example.Magazapp.Categories.OutdoorActivity" />
+        <activity android:name="com.example.Magazapp.Categories.TechActivity" />
+        <activity android:name="com.example.Magazapp.Fragments.KategoriActivity" />
+        <activity android:name="com.example.Magazapp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Extras.FavoritesActivity" />
-        <activity android:name=".Extras.MessageActivity" />
-        <activity android:name=".Extras.SecondActivity" />
+        <activity android:name="com.example.Magazapp.Extras.FavoritesActivity" />
+        <activity android:name="com.example.Magazapp.Extras.MessageActivity" />
+        <activity android:name="com.example.Magazapp.Extras.SecondActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.Magazapp.MainActivity"
             android:label="Magazapp" />
     </application>
 

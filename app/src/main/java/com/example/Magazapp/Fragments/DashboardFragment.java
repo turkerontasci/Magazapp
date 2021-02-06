@@ -1,4 +1,4 @@
-package com.example.deneme.Fragments;
+package com.example.Magazapp.Fragments;
 
 
 import android.content.Intent;
@@ -9,18 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.ArrayAdapter;
-import android.widget.AdapterView;
 
-import com.example.deneme.Categories.MenswearActivity;
-import com.example.deneme.Categories.OutdoorActivity;
-import com.example.deneme.Categories.PersonalcareActivity;
-import com.example.deneme.Categories.TechActivity;
-import com.example.deneme.Categories.WomenswearActivity;
-import com.example.deneme.R;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.Magazapp.Categories.MenswearActivity;
+import com.example.Magazapp.Categories.OutdoorActivity;
+import com.example.Magazapp.Categories.PersonalcareActivity;
+import com.example.Magazapp.Categories.TechActivity;
+import com.example.Magazapp.Categories.WomenswearActivity;
+import com.example.Magazapp.R;
 
 public class DashboardFragment extends Fragment {
 

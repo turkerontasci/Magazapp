@@ -1,4 +1,4 @@
-package com.example.deneme.Model;
+package com.example.Magazapp.Model;
 
 public class CustomBottomItem {
 

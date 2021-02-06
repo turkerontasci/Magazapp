@@ -1,4 +1,4 @@
-package com.example.deneme.Fragments;
+package com.example.Magazapp.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.deneme.R;
+import com.example.Magazapp.R;
 
 public class ProfileFragment extends Fragment {
 
@@ -64,9 +64,9 @@ public class ProfileFragment extends Fragment {
 
         userStatus(0);
 
-
-
         return view;
     }
+
+
 }
 

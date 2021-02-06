@@ -6,11 +6,10 @@
         android:bottomLeftRadius="15dp"
         android:bottomRightRadius="15dp"
         />
-    <gradient
-        android:centerColor="@color/mainColor"
-        android:startColor="@color/mainColor"
-        android:endColor="@color/mainColor"
+    <solid
+        android:color="#FFFFFF"
         />
+
     <padding
         android:left="0dp"
         android:top="0dp"
@@ -18,7 +17,7 @@
         android:bottom="0dp"
         />
     <size
-        android:width="120dp"
-        android:height="60dp"
+        android:width="80dp"
+        android:height="40dp"
         />
 </shape>

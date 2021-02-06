@@ -1,13 +1,11 @@
-package com.example.deneme.Extras;
+package com.example.Magazapp.Extras;
 
-import android.animation.Animator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.deneme.R;
+import com.example.Magazapp.R;
 
 
 public class SecondActivity extends AppCompatActivity{

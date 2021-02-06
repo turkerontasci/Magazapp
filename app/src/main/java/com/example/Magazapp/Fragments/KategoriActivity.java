@@ -1,9 +1,9 @@
-package com.example.deneme.Fragments;
+package com.example.Magazapp.Fragments;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.deneme.R;
+import com.example.Magazapp.R;
 
 public class KategoriActivity extends AppCompatActivity {
 

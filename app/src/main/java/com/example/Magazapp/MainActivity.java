@@ -1,4 +1,4 @@
-package com.example.deneme;
+package com.example.Magazapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,13 +12,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.deneme.Extras.FavoritesActivity;
-import com.example.deneme.Extras.MessageActivity;
-import com.example.deneme.Fragments.DashboardFragment;
-import com.example.deneme.Fragments.HomeFragment;
-import com.example.deneme.Fragments.ImageFragment;
-import com.example.deneme.Fragments.NotificationFragment;
-import com.example.deneme.Fragments.ProfileFragment;
+import com.example.Magazapp.Extras.FavoritesActivity;
+import com.example.Magazapp.Extras.MessageActivity;
+import com.example.Magazapp.Fragments.DashboardFragment;
+import com.example.Magazapp.Fragments.HomeFragment;
+import com.example.Magazapp.Fragments.ImageFragment;
+import com.example.Magazapp.Fragments.NotificationFragment;
+import com.example.Magazapp.Fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 

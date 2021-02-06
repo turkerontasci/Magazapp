@@ -1,22 +1,20 @@
-package com.example.deneme.Categories;
+package com.example.Magazapp.Extras;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.deneme.MainActivity;
-import com.example.deneme.R;
+import com.example.Magazapp.R;
 
-public class MenswearActivity extends AppCompatActivity {
+public class MessageActivity extends AppCompatActivity {
 
     ImageView backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menswear);
+        setContentView(R.layout.activity_message);
 
         backArrow = findViewById(R.id.back);
 
