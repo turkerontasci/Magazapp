@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.turkerontasci.Magazapp.Extras.FavoritesActivity;
 import com.turkerontasci.Magazapp.Extras.MessageActivity;
-import com.turkerontasci.Magazapp.Fragments.DashboardFragment;
+import com.turkerontasci.Magazapp.Fragments.CategoryFragment;
 import com.turkerontasci.Magazapp.Fragments.HomeFragment;
 import com.turkerontasci.Magazapp.Fragments.ImageFragment;
 import com.turkerontasci.Magazapp.Fragments.NotificationFragment;
@@ -23,7 +23,7 @@ import com.turkerontasci.Magazapp.Fragments.ProfileFragment;
 public class MainActivity extends AppCompatActivity {
 
     final Fragment fragment1 = new HomeFragment();
-    final Fragment fragment2 = new DashboardFragment();
+    final Fragment fragment2 = new CategoryFragment();
     final Fragment fragment3 = new NotificationFragment();
     final Fragment fragment4 = new ProfileFragment();
     final Fragment fragment5 = new ImageFragment();
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         appNameButton = findViewById(R.id.appName);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.main_container, fragment4, "4").hide(fragment4).commit();
         fm.beginTransaction().add(R.id.main_container, fragment3, "3").hide(fragment3).commit();
         fm.beginTransaction().add(R.id.main_container, fragment2, "2").hide(fragment2).commit();
-        fm.beginTransaction().add(R.id.main_container,fragment1, "1").commit();
+        fm.beginTransaction().add(R.id.main_container, fragment1, "1").commit();
 
     }
 

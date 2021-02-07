@@ -17,12 +17,12 @@ import com.turkerontasci.Magazapp.Categories.TechActivity;
 import com.turkerontasci.Magazapp.Categories.WomenswearActivity;
 import com.turkerontasci.Magazapp.R;
 
-public class DashboardFragment extends Fragment {
+public class CategoryFragment extends Fragment {
 
     private ListView listView;
     private CardView cardView1, cardView2, cardView3, cardView4, cardView5;
 
-    public DashboardFragment() {
+    public CategoryFragment() {
         // Required empty public constructor
 
     }
@@ -31,7 +31,7 @@ public class DashboardFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        View view = inflater.inflate(R.layout.fragment_category, container, false);
 
         cardView1 = view.findViewById(R.id.categoryCard1);
         cardView2 = view.findViewById(R.id.categoryCard2);
